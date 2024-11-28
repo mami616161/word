@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Word Puzzle Game</h1>
+            <div class="game-info">
+                <span class="level">Level: <span id="currentLevel">1</span></span>
+                <span class="category">Category: <span id="currentCategory">Select Category</span></span>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <div id="puzzle-grid" class="puzzle-grid"></div>
+            <div id="word-list" class="word-list"></div>
+        </div>
+
+        <div class="controls">
+            <button id="checkButton">Check Solution</button>
+            <button id="nextLevel" style="display: none;">Next Level</button>
+            <button id="changeCategory">Change Category</button>
+        </div>
+    </div>
+
+    <div id="categoryModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Category</h2>
+            <div id="categoryList" class="category-list"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
